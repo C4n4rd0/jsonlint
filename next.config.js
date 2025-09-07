@@ -2,6 +2,9 @@ const result = require('dotenv').config()
 
 module.exports = {
 	reactStrictMode: false,
+	images: {
+		unoptimized: true,
+	},
 	async redirects() {
 		return [
 			{

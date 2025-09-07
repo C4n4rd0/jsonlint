@@ -4,8 +4,11 @@
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
+		"build:prod": "npm run build && npm run export",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "next lint",
+		"export": "next export",
+		"deploy": "aws cloudformation deploy --template-file cloudfront.yml --stack-name jsonlint-stack --capabilities CAPABILITY_NAMED_IAM && (aws cloudformation wait stack-create-complete --stack-name jsonlint-stack || aws cloudformation wait stack-update-complete --stack-name jsonlint-stack) && npm run build && npm run export && BUCKET=$(aws cloudformation describe-stack-resources --stack-name jsonlint-stack --logical-resource-id WebsiteBucket --query \"StackResources[0].PhysicalResourceId\" --output text) && echo $BUCKET && aws s3 sync ./out s3://$BUCKET --delete"
 	},
 	"dependencies": {
 		"@tailwindcss/aspect-ratio": "^0.4.2",
