@@ -92,8 +92,8 @@ export default function Home() {
 						<h2>Different Results</h2>
 						<p>If you use a Windows computer you may end up with different results. This is possibly due to the way Windows handles newlines. Essentially, if you have just newline characters <code>(\n)</code> in your JSON and paste it into JSONLint from a Windows computer, it may validate it as valid erroneously since Windows may need a carriage return <code>(\r)</code> as well to detect newlines properly. As a solution, either use direct URL input, or make sure your content&apos;s newlines match the architecture your system expects!</p>
 						
-						<h2>Credits</h2>
-						<p>Maintained by CircleCell. Thanks to <a href="http://www.crockford.com/">Douglas Crockford</a> of JSON and JS Lint, and <a href="http://zaa.ch/">Zach Carter</a>, who built a <a href="https://github.com/zaach/jsonlint">pure JavaScript implementation</a>. You can download the <a href="https://www.github.com/circlecell/jsonlintdotcom" data-ga="sourceLink">JSONLint source code on GitHub</a>.</p>
+						<h2 className="hidden">Credits</h2>
+						<p className="hidden">Maintained by CircleCell. Thanks to <a href="http://www.crockford.com/">Douglas Crockford</a> of JSON and JS Lint, and <a href="http://zaa.ch/">Zach Carter</a>, who built a <a href="https://github.com/zaach/jsonlint">pure JavaScript implementation</a>. You can download the <a href="https://www.github.com/circlecell/jsonlintdotcom" data-ga="sourceLink">JSONLint source code on GitHub</a>.</p>
 					
 					</div>
 					
@@ -104,7 +104,7 @@ export default function Home() {
 						<div id="bsa-zone_1605730077127-6_123456"></div>
 					</div>
 					
-					<div className="py-10 px-6 bg-slate-100 dark:bg-slate-800">
+					<div className="py-10 px-6 bg-slate-100 dark:bg-slate-800 hidden">
 						<h2 className="text-base font-semibold mb-6 font-['MonoLisa'] tracking-tight dark:text-slate-400">
 				        	<svg viewBox="0 0 640 512" height="24" className="mb-2 dark:text-slate-500"><path fill="currentColor" d="M416 31.94C416 21.75 408.1 0 384.1 0c-13.98 0-26.87 9.072-30.89 23.18l-128 448c-.8404 2.935-1.241 5.892-1.241 8.801C223.1 490.3 232 512 256 512c13.92 0 26.73-9.157 30.75-23.22l128-448C415.6 37.81 416 34.85 416 31.94zM176 143.1c0-18.28-14.95-32-32-32c-8.188 0-16.38 3.125-22.62 9.376l-112 112C3.125 239.6 0 247.8 0 255.1S3.125 272.4 9.375 278.6l112 112C127.6 396.9 135.8 399.1 144 399.1c17.05 0 32-13.73 32-32c0-8.188-3.125-16.38-9.375-22.63L77.25 255.1l89.38-89.38C172.9 160.3 176 152.2 176 143.1zM640 255.1c0-8.188-3.125-16.38-9.375-22.63l-112-112C512.4 115.1 504.2 111.1 496 111.1c-17.05 0-32 13.73-32 32c0 8.188 3.125 16.38 9.375 22.63l89.38 89.38l-89.38 89.38C467.1 351.6 464 359.8 464 367.1c0 18.28 14.95 32 32 32c8.188 0 16.38-3.125 22.62-9.376l112-112C636.9 272.4 640 264.2 640 255.1z"/></svg>
 							More tools from JSONLint
@@ -124,7 +124,7 @@ export default function Home() {
 						
 					</div>
 					
-					<div className="py-10 px-6 bg-slate-100 dark:bg-slate-800">
+					<div className="py-10 px-6 bg-slate-100 dark:bg-slate-800 hidden">
 						<h2 className="text-base font-semibold mb-6 font-['MonoLisa'] tracking-tight dark:text-slate-400">
 				        	<svg viewBox="0 0 640 512" height="24" className="mb-2 dark:text-slate-500"><path fill="currentColor" d="M416 31.94C416 21.75 408.1 0 384.1 0c-13.98 0-26.87 9.072-30.89 23.18l-128 448c-.8404 2.935-1.241 5.892-1.241 8.801C223.1 490.3 232 512 256 512c13.92 0 26.73-9.157 30.75-23.22l128-448C415.6 37.81 416 34.85 416 31.94zM176 143.1c0-18.28-14.95-32-32-32c-8.188 0-16.38 3.125-22.62 9.376l-112 112C3.125 239.6 0 247.8 0 255.1S3.125 272.4 9.375 278.6l112 112C127.6 396.9 135.8 399.1 144 399.1c17.05 0 32-13.73 32-32c0-8.188-3.125-16.38-9.375-22.63L77.25 255.1l89.38-89.38C172.9 160.3 176 152.2 176 143.1zM640 255.1c0-8.188-3.125-16.38-9.375-22.63l-112-112C512.4 115.1 504.2 111.1 496 111.1c-17.05 0-32 13.73-32 32c0 8.188 3.125 16.38 9.375 22.63l89.38 89.38l-89.38 89.38C467.1 351.6 464 359.8 464 367.1c0 18.28 14.95 32 32 32c8.188 0 16.38-3.125 22.62-9.376l112-112C636.9 272.4 640 264.2 640 255.1z"/></svg>
 							Learn more about JSON
