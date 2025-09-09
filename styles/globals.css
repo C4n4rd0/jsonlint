@@ -261,3 +261,7 @@ body.dark .top-ad-container {
 	width: 100%;
 	scroll-snap-align: start;
 }
+
+.hidden {
+	display: none !important;
+}
